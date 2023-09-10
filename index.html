@@ -13,6 +13,8 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- custom  -->
 <script>
     tailwind.config = {
@@ -35,9 +37,58 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-        
+
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <div>
+                <h1 class="text-7xl font-extrabold">It's good
+                    <br> 
+                    tea time at The  <br>
+                    Tea House</h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+              <div>
+                <img src="./images/banner.png" class="max-w-sm " />
+                <div class="flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 -mt-16">
+                  <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                  <div >
+                    <h3 class="text-3xl">5.00</h3>
+                    <p>Trust Pilot Ratings</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
+
+    <main class="container mx-auto">
+      <!-- featured section -->
+      <section class="text-center my-24">
+        <h2 class="text-5xl font-extralight mb-5">Our Featured Products</h2>
+        <p class="lg:max-w-3xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+        <!-- cart container  -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card w-96 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+    </main>
 </body>
 
 </html>
